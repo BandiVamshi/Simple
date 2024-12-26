@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Pop-Up Prompt</title>
+</head>
+<body>
+
+    <h2>Basic Pop-Up Prompt Example</h2>
+
+    <!-- Button to open the pop-up -->
+    <button id="openPromptBtn">Open Commit Prompt</button>
+
+    <script>
+        // Get the button that opens the prompt
+        var btn = document.getElementById("openPromptBtn");
+
+        // When the button is clicked, prompt the user for a commit message
+        btn.onclick = function() {
+            // Use JavaScript's native prompt to get the commit message
+            var commitMessage = prompt("Enter your commit message:");
+
+            // Check if the user entered a commit message
+            if (commitMessage) {
+                alert("Commit Message: " + commitMessage);
+            } else {
+                alert("No commit message entered.");
+            }
+        }
+    </script>
+
+</body>
+</html>
